@@ -9,22 +9,21 @@ for n in range(0, len(student_heights)):
 
 #print(student_heights)
 #print(n)
+number_student = 0
 
-sum_score = 0
-for score in student_heights:
-    sum_score = score + sum_score
-#print (sum_score)#int
-#print (n)#int
-
-#average_score = (sum_score / (n+1))
-number_of_students =  0
 for student in student_heights:
-    number_of_students += 1
+  number_student += 1
+#print(number_student)
 
-average_score = (sum_score / number_of_students)
+height_sum = 0 
+for height_item in student_heights:
+  height_sum = height_sum + height_item
+print(height_sum)
 
-avg_score_rnd = round(average_score)
-print(avg_score_rnd)
+average_height = (height_sum/number_student)
+average_height_rounded = round(average_height)
+print(average_height_rounded)
+#print(f"Average heights rounded to the nearest whole number = {average_height_rounded}")
 
 
 
